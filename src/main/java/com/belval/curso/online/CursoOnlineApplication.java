@@ -1,13 +1,13 @@
-package com.belval.Cursos.Online;
+package com.belval.curso.online;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CursosOnlineApplication {
+public class CursoOnlineApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CursosOnlineApplication.class, args);
+		SpringApplication.run(CursoOnlineApplication.class, args);
 	}
 
 }
