@@ -2,13 +2,23 @@ package com.belval.curso.online.entity;
 
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity 
+
 public class Aluno {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
 	private String telefone;
 	private String aula;
 	private String curso;
+	private String matricula;
 	
 	public Aluno() {
 		
@@ -43,6 +53,12 @@ public class Aluno {
 	}
 	public void setCurso(String curso) {
 		this.curso = curso;
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	}
 	@Override
 	public int hashCode() {
