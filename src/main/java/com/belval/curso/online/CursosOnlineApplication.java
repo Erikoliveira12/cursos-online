@@ -1,4 +1,4 @@
-package com.belval.Cursos.Online;
+package com.belval.curso.online;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
